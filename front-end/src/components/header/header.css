@@ -1,0 +1,144 @@
+.content {
+    position: relative;
+    justify-content: center;
+    margin-left: 35%;
+}
+
+.content h2 {
+    color: rgb(251, 242, 242);
+    font-size: 4em;
+    position: absolute;
+}
+
+.content h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #03f41b;
+}
+
+.content h2:nth-child(2) {
+    color: #ccf403;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 45%,
+                16% 44%,
+                33% 50%,
+                54% 60%,
+                70% 61%,
+                84% 59%,
+                100% 52%,
+                100% 100%,
+                0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%);
+    }
+}
+
+
+
+.header__container {
+    padding : 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10;
+    text-align: center;
+    height: 100%;
+}
+
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+   
+}
+
+.cta {
+    margin-top: 5.5rem;
+    margin-left: 90;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+
+
+
+
+.header__socials::after {
+    content: "";
+    width: 1px;
+    height: 12rem;
+    background: var(--color-primary);
+}
+
+.me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    height: 15rem;
+    border-radius: 12rem 12rem 0 0;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.text_light {
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i));
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+@keyframes flip {
+
+    0%,
+    80% {
+        transform: rotateY(360deg)
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .header_meadle {
+            margin-left: 130px;
+        }
+    .me {
+         position: relative;
+        }
+    header {
+        justify-content: space-around;
+        height: 75vh;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .content {
+            margin-left: 15%;
+            }
+    .header_meadle {
+            margin-left: 0px;
+        }
+    header {
+        height: 60vh;
+    }
+
+    .header__socials,
+    .scroll__down {
+        display: none;
+    }
+}
