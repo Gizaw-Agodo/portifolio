@@ -29,7 +29,7 @@ import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";cons
             <article className="experience__details">
               <CheckCircleOutlineIcon className="experience__details-icons" />
               <div>
-                <h4>JavaScript</h4>
+                <h4>Angular</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
