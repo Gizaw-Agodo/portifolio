@@ -17,8 +17,8 @@ const Portfolio = () => {
       <h2>Projects</h2>
 
       <div className="container portfolio__container">
-        {projects.map((project) => (
-          <article className="portfolio__item">
+        {projects.map((project, index) => (
+          <article className="portfolio__item" key={index}>
             <div className="portfolio__item-image">
               <img src={urlFor(project.imgurl)} alt="" />
             </div>
