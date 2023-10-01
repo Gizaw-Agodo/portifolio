@@ -8,14 +8,14 @@ import AddHomeWorkIcon from "@mui/icons-material/AddHomeWork";
 import Tooltip from "@mui/material/Tooltip";
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState("#");
+  const [activeNav, setActiveNav] = useState("#home");
 
   return (
     <nav>
       <a
-        href="#"
-        onClick={() => setActiveNav("#")}
-        className={activeNav === "#" ? "active" : ""}
+        href="#home"
+        onClick={() => setActiveNav("#home")}
+        className={activeNav === "#home" ? "active" : ""}
       >
         <Tooltip title="home">
           <Home />

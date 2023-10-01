@@ -6,7 +6,7 @@ import { Facebook, GitHub, LinkedIn } from "@mui/icons-material";
 
 const Header = () => {
   return (
-    <header style={{ marginTop: 50 }}>
+    <header style={{ marginTop: 50 }} id="home">
       <div className="container header__container " >
         <div className="header__socials">
           <a href="https://www.linkedin.com/in/gizaw-agodo-671390218/">
