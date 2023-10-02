@@ -2,12 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./testimonials.css";
 import SwiperCore, { Autoplay } from "swiper";
 
-// import AVTR1 from "../../assets/avatar1.jpg";
-// import AVTR2 from "../../assets/avatar2.jpg";
-// import AVTR3 from "../../assets/avatar3.jpg";
-// import AVTR4 from "../../assets/avatar4.jpg";
-// import Swiper core and required modules
-
 import { Pagination } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -27,14 +21,14 @@ const Testimonials = () => {
   
   return (
     <section id="testimonials">
-      <h5>Review from clients</h5>
       <h2>Testimonials</h2>
+      <h5>Review from clients</h5>
 
       <Swiper
         className="container testimonials__container"
         autoplay={{
-          delay: 3000,
-          disableOnInteraction: false
+          delay: 4000,
+          disableOnInteraction: true
         }}
         modules={[Pagination]}
         spaceBetween={40}

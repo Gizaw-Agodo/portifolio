@@ -13,8 +13,8 @@ const Portfolio = () => {
    }, []);
   return (
     <section id="portfolio">
-      <h5>What I have Done</h5>
       <h2>Projects</h2>
+      <h5>What I have Done</h5>
 
       <div className="container portfolio__container">
         {projects.map((project, index) => (

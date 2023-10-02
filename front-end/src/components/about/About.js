@@ -8,8 +8,8 @@ import { Typography } from "@mui/material";
 const About = () => {
   return (
     <section id="about">
-      <h5>Get To Know</h5>
       <h2>About Me</h2>
+      <h5>Get To Know</h5>
 
       <div className="container about__container">
         <div className="about__me">
@@ -23,7 +23,7 @@ const About = () => {
             <article className="about__card">
               <EmojiEventsIcon />
               <h5>Experience</h5>
-              <small>1+ Years Working</small>
+              <small>4+ Years Working</small>
             </article>
 
             <article className="about__card">
@@ -39,10 +39,7 @@ const About = () => {
             </article>
           </div>
           <Typography>
-            I am a full stack web developer from Ethiopia addis ababa i
-            like reading and codding and currently I am studing software
-            engineering in Addis Ababa university my main moto is solving
-            problems by employing engineering principles
+          I'm a passionate full-stack web developer hailing from the vibrant city of Addis Ababa, Ethiopia. With a deep love for both reading and coding, I've embarked on an exciting journey as a student of software engineering at Addis Ababa University. My driving force? Harnessing the power of engineering principles to tackle real-world problems head-on. Join me on this exhilarating quest to transform challenges into innovative solutions!
           </Typography>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
