@@ -1,51 +1,104 @@
 .portfolio__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
 }
 
 .portfolio__item {
-    background: var(--color-bg-variant);
-    padding: 1.3rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
+  background: var(--color-bg-variant);
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
 }
 
 .portfolio__item:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
 }
 
+/* Ensure the image section has equal height and width */
 .portfolio__item-image {
-    border-radius: 1.5rem;
-    overflow: hidden;
+  width: 100%; /* Take full width */
+  height: 0; /* Set height to 0 */
+  padding-top: 75%; /* Adjust padding to make the image a little shorter */
+  position: relative; /* To position the image inside */
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+.portfolio__item-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
 .portfolio__item h3 {
-    margin: 1.2rem 0 2rem;
+  margin: 1.2rem 0 2rem;
 }
 
+/* Add styling for description with scrolling */
+.portfolio__item-description {
+  width: 100%;
+  height: 70px;
+  overflow-y: scroll;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  /* scrollbar-width: thin;
+  scrollbar-color: #bababa #6b6b6b; */
+  white-space: normal; 
+  overflow-wrap: break-word; 
+  word-wrap: break-word;
+}
+
+
+/* Styling for buttons */
 .portfolio__item-cta {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Chips styling */
+.portfolio__item-techstack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tech-chip {
+  background-color: var(--color-primary-variant);
+  padding: 0.3rem 0.7rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+.tech-chip:hover {
+  background-color: var(--color-primary);
+  color: white;
+  transform: scale(1.1);
 }
 
 /* ======media queries for tablets(medium devices) =========*/
-
 @media screen and (max-width: 1024px) {
-    .portfolio__container {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
-    }
+  .portfolio__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
 }
 
 /* ======media queries for mobile(small devices) =========*/
-
 @media screen and (max-width: 600px) {
-    .portfolio__container {
-        grid-template-columns: 1fr;
-    }
+  .portfolio__container {
+    grid-template-columns: 1fr;
+  }
 }
