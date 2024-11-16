@@ -1,17 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./portifolio.css";
-import { urlFor, client } from "../../client";
 import projects from "../../data/projectsData";
 
 const Portfolio = () => {
-  // const myprojects = projects;
 
-  // useEffect(() => {
-  //   const query = `*[_type == "projects"]`;
-  //   client.fetch(query).then((data) => {
-  //     setProjects(data);
-  //   });
-  // }, []);
 
   return (
     <section id="portfolio">
