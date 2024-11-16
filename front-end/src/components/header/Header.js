@@ -1,6 +1,5 @@
 import React from "react";
 import "./header.css";
-import ME from "../../assets/me.jpg";
 import CV from "../../assets/Resume.gizaw.pdf";
 import { Facebook, GitHub, LinkedIn } from "@mui/icons-material";
 
@@ -42,11 +41,9 @@ const Header = () => {
         </div>
         <div className="me">
           <img
-            src={ME}
+            src="/assets/me2.png"
             alt="me"
-            style={{
-              borderRadius: "12rem 12rem 0 0",
-            }}
+            className="profile-image"
           />
         </div>
       </div>
